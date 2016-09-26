@@ -27,9 +27,9 @@ class TreeView extends Component {
       })
 
       if (this.state.visible && node.items.length) {
-        objectClass = nodeItem + ' ' + nodeItemDown
+        objectClass = `${nodeItem} ${nodeItemDown}`
       } else if(!this.state.visible && node.items.length) {
-        objectClass = nodeItem + ' ' + nodeItemUp
+        objectClass = `${nodeItem} ${nodeItemUp}`
       } else {
         objectClass = ''
       }
